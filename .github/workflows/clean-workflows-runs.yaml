@@ -1,0 +1,22 @@
+name: Clean Workflows Logs/Runs
+
+on:
+  workflow_call:
+    inputs:
+      num_runs:
+        required: true
+        type: number
+    secrets:
+      myToken:
+        required: true
+
+jobs:
+  clean_workflows_jobs:
+    name: Limpiar logs/Ejecuciones de los workflows
+    runs-on: ubuntu-latest
+    steps:
+      - name: JavaScript repeat action
+        uses: jmmirand/clean-workflows-logs-runs@main
+        with:
+         myToken: ${{ secrets.myToken }}
+         num_runs: ${{ inputs.num_runs }}
