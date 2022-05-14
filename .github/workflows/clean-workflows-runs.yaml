@@ -10,7 +10,8 @@ on:
       myToken:
         required: true
 
-  clean-workflows-jobs:
+jobs:
+  clean_workflows_jobs:
     name: Limpiar logs/Ejecuciones de los workflows
     runs-on: ubuntu-latest
     steps:
