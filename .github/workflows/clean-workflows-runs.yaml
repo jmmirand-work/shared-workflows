@@ -1,4 +1,4 @@
-name: Clean Workflows Logs/Runs
+name: Clean Workflows Logs-Runs
 
 on:
   workflow_call:
