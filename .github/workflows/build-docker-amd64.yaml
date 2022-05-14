@@ -53,4 +53,4 @@ jobs:
           platforms: linux/arm64,linux/amd64
           tags: ${{ inputs.tags }}
           push: true
-          build-args: ${{ build_options  }}
+          build-args: ${{ inputs.build_options  }}
