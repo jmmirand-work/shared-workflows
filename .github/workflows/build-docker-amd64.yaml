@@ -51,7 +51,6 @@ jobs:
         with:
           file: ./Dockerfile
           platforms: linux/arm64,linux/amd64
-          tags: {{ inputs.tags }}
+          tags: ${{ inputs.tags }}
           push: true
-          build-args: |
-            RUNNER_VERSION=${{ steps.extract_branch_name.outputs.runner_version }}
+          build-args: ${{ build_options  }}
