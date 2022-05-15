@@ -8,7 +8,7 @@ on:
         type: number
     secrets:
       myToken:
-        required: false
+        required: true
 
 jobs:
   clean_workflows_jobs:
